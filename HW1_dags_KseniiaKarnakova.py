@@ -51,7 +51,7 @@ models = {
 
 def init(model_name: str):
     timestamp = datetime.now().strftime('%d/%m/%y %H:%M:%S')
-    _LOG.info("Train pipeline started for {model_name} model.")
+    _LOG.info(f"Train pipeline started for {model_name} model.")
 
     init_info = {
     "timestamp": timestamp, 
