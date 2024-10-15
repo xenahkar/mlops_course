@@ -59,7 +59,7 @@ def prepare_data(model_name: str, data: pd.DataFrame):
 if __name__ == "__main__":
 
     experiment = mlflow.get_experiment_by_name(experiment_name)
-    # Создадим эксперемент/подключимся к эксперементу (если такой уже есть)
+    # Создадим эксперимент/подключимся к эксперименту (если такой уже есть)
     if experiment:
         exp_id = mlflow.set_experiment(experiment_name).experiment_id
     else:
